@@ -40,7 +40,7 @@ $googleAnalyticsId	 = "UA-XXXXXXXX-X";
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title></title>
+	<title><?php echo $appTitle; ?></title>
 	<meta name="Author" content="<?php echo $author; ?>">
 	<meta name="Description" content="<?php echo $author; ?>">
 	<meta name="Keywords" content="<?php echo $author; ?>">
