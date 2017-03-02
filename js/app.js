@@ -84,13 +84,13 @@ var App = {
 				
 					$("#MainContent")[0].innerHTML  = data;
 					
-					if( $("#AppPageTitle")[0] === undefined ){
+					if( $('#PageWrapper')[0].getAttribute("data-page-title") === null ){
 						
 						$('#ContentTitle')[0].innerHTML = "Title Tag Not Found";
 						
 					}else{
 						
-						$('#ContentTitle')[0].innerHTML = $("#AppPageTitle")[0].innerHTML;
+						$('#ContentTitle')[0].innerHTML = $('#PageWrapper')[0].getAttribute("data-page-title");
 						
 					}
 					
