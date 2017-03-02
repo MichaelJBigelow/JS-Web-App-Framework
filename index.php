@@ -1,6 +1,6 @@
 <?php
 
-$devMode = TRUE;
+$forceHTTPS = FALSE;
 
 //Create dynamic site root variable.
 $siteRoot = "//" . $_SERVER["HTTP_HOST"];
@@ -12,7 +12,7 @@ if( $subDir != "" ){
 }
 
 /* Force HTTPS */
-if( ( !isset( $_SERVER["HTTPS"] ) || $_SERVER["HTTPS"] != "on" ) && !$devMode ){
+if( ( !isset( $_SERVER["HTTPS"] ) || $_SERVER["HTTPS"] != "on" ) && $forceHTTPS ){
 	$redirectSiteRoot = "https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
     header("Location: " . $redirectSiteRoot);
     exit();
@@ -52,7 +52,7 @@ $googleAnalyticsId	 = "UA-XXXXXXXX-X";
 	<meta property="og:url" content="<?php echo $siteRoot; ?>" />
 	<meta property="og:title" content="<?php echo $appTitle; ?>" />
 	<meta property="og:description" content="<?php echo $facebookDescription; ?>" />
-	<meta property="og:image" content="<?php echo $siteRoot; ?>/images/icons/FB_Icon.png" />
+	<meta property="og:image" content="<?php echo $siteRoot; ?>/images/FB_Icon.png" />
 	
 	<link rel="stylesheet" href="<?php echo $siteRoot; ?>/css/main.css?v=2.24.2017.1" media="screen,projection,print" />
 	
@@ -82,7 +82,7 @@ $googleAnalyticsId	 = "UA-XXXXXXXX-X";
 				<div class="MenuIconSpacer"></div>
 			</div>
 			<div id="WebsiteTitle">
-				<?php echo $appTitle;?>
+				<?php echo $appTitle; ?>
 			</div>
 			<div id="SocialMedia">
 				

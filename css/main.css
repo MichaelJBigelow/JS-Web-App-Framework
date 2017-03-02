@@ -149,6 +149,7 @@ a{
 }
 #MainContent{
 	font-size:21px;
+	text-align:center;
 }
 #Footer{
 	position:relative;
