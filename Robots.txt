@@ -1,9 +1,3 @@
 User-agent: *
 Disallow: /_db_backups/
 Disallow: /cgi-bin/
-Disallow: /css/
-Disallow: /fonts/
-Disallow: /images/
-Disallow: /js/
-Disallow: /php/
-Disallow: /pages/

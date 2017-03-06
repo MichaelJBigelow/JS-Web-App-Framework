@@ -122,7 +122,7 @@ a{
 }
 #AppHeader{
 	position:fixed;
-	width:90%;
+	width:100%;
 	z-index:3;
 }
 #WebsiteTitle{
