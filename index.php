@@ -91,24 +91,24 @@ $googleAnalyticsId	 = "UA-XXXXXXXX-X";
 		
 		<nav id="NavMain">
 			<div id="NavScrollWrap">
-				<div class="NavLink bg" id="NavHomeButton" onclick="App.loadPage('home')">Home</div>
-				<div class="NavLink bg" onclick="App.closeMenu()">Close Menu</div>
+				<div class="NavLink" id="NavHomeButton" onclick="App.loadPage('home')">Home</div>
+				<div class="NavLink" onclick="App.closeMenu()">Close Menu</div>
 			</div>
 		</nav>
 		<div style="display:none;" id="MenuBackgroundShader" onclick="App.closeMenu()"></div>
 		
 		<div id="Content">
 			<div id="ContentTitleContainer">
-				<div id="ContentTitle">Loading...</div>
+				<h1 id="ContentTitle">Loading...</h1>
 			</div>
 			<div id="MainContent"></div>
 			<div style="clear:both;"></div>
 		</div>
 		
 		<footer id="Footer">
-			<span>Our </span><span onclick="App.loadPage('privacy_policy')" class="textLink">Privacy Policy</span><span> & </span><span onclick="App.loadPage('disclaimer')" class="textLink">Disclaimer</span>
+			<span>Our </span><a onclick="App.loadPage('privacy_policy')" class="textLink">Privacy Policy</a><span> & </span><a onclick="App.loadPage('disclaimer')" class="textLink">Disclaimer</a>
 			<div>All material herein &copy; <?php echo date('Y'); ?> <?php echo $copyrightOwner;?>, all rights reserved.</div>
-		</footer><!-- Fixes auto height on main content area -->
+		</footer>
 	</div>
 	<!-- End Main Container -->
 
