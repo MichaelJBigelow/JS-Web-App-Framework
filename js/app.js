@@ -2,7 +2,7 @@
 function onloadFunctionSet( pageSelection ){
 	
 	//Get page location for correct URL address.
-	App.currentDirectory = window.location;
+	App.currentDirectory = window.location.origin;
 	
 	//Open requested page if specified or load visitors last page.
 	if( pageSelection === 'default' ){
@@ -25,7 +25,6 @@ function onloadFunctionSet( pageSelection ){
 		App.loadPage( pageSelection );
 		
 	}
-	
 	
 }
 //END of "onload" funciton set
